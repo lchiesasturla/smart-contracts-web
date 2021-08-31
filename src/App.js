@@ -1,22 +1,22 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import RenantHome from './pages/RenantHome';
-import RealEstateHome from './pages/RealEstateHome';
-import LocatorHome from './pages/LocatorHome';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ContractList from './pages/contracts/ContractList';
+import NavigationBar from "./components/layout/NavigationBar";
+import Topbar from "./components/layout/Topbar";
+import ContractCreation from "./pages/contracts/ContractCreation/ContactCreation";
 
 function App() {
   return (
     <Router>
-        <Switch>
-          <Route exact path="/renant">
-            <RenantHome />
-          </Route>
-          <Route path="/real-estate">
-            <RealEstateHome />
-          </Route>
-          <Route path="/locator">
-            <LocatorHome />
-          </Route>
-        </Switch>
+      <Topbar/>
+      <NavigationBar/>
+      <Switch>
+        <Route exact path="/">
+          <ContractList />
+        </Route>
+        <Route path="/contracts/new">
+          <ContractCreation />
+        </Route>
+      </Switch>
     </Router>
   );
 }
