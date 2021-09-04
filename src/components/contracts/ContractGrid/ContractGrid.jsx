@@ -4,8 +4,8 @@ import { contractsColumns } from '../../../utils/formats';
 
 const ContractGrid = () => {
     const [contracts, setContracts] = useState([
-      { id: 1, streetName: 'Charcas 2500', locator: 'Jon Snow', amount: '$25.000', state: true, days: {remaining: '245', total: '720'}, actions: '' },
-      { id: 2, streetName: 'Curapaligue 200', locator: 'Marley', amount: '$30.000', state: false, days: {remaining: '0', total: '720'}, actions: '' },
+      { id: 1, streetName: 'Charcas 2500', locator: 'Prueba Prueba', amount: '$25.000', state: true, days: {remaining: '245', total: '720'}, actions: '' },
+      { id: 2, streetName: 'Curapaligue 200', locator: 'Prueba2 Prueba2', amount: '$30.000', state: false, days: {remaining: '0', total: '720'}, actions: '' },
     ])
 
     return ( 
